@@ -6,10 +6,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.List;
 
-public class CommonServiceImpl<T extends BaseEntity> implements CommonService<T> {
+
+public  class CommonServiceImpl<T extends BaseEntity> implements CommonService<T> {
+
     private CommonDAO<T> commonDAO;
 
-    @Autowired
+
+
     public CommonServiceImpl(CommonDAO<T> commonDAO) {
         this.commonDAO = commonDAO;
     }
